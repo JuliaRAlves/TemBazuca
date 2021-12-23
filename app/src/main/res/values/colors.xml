@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#313131</color>
+    <color name="orange_gradient_start">#FF6B00</color>
+    <color name="orange_gradient_end">#583114</color>
+    <color name="disabled_input_grey">#515151</color>
+    <color name="positive_green">#31B01D</color>
+    <color name="negative_red">#E92020</color>
+    <color name="white">#E9E9E9</color>
+    <color name="transparent">#00000000</color>
+</resources>
