@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- margins -->
+
     <dimen name="default_margin">16dp</dimen>
+
+    <!-- elements radius -->
+
+    <dimen name="default_radius">12dp</dimen>
+
+    <!-- font sizes -->
 
     <dimen name="regular_font_size">14sp</dimen>
     <dimen name="big_font_size">24sp</dimen>
 
-    <dimen name="default_radius">12dp</dimen>
+    <!-- elements height -->
 
     <dimen name="button_height">64dp</dimen>
+    <dimen name="logo_height">170dp</dimen>
+
 </resources>

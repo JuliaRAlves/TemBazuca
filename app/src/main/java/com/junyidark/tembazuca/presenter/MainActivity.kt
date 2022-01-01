@@ -1,7 +1,8 @@
-package com.junyidark.tembazuca
+package com.junyidark.tembazuca.presenter
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.junyidark.tembazuca.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:gravity="center"
-    android:orientation="vertical">
+    tools:viewBindingIgnore="true">
 
-    <com.google.android.material.textfield.TextInputLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/home_fragment"
+        android:name="com.junyidark.tembazuca.presenter.HomeFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/transparent"
-            android:hint="Digite o nome de um filme"
-            android:textColor="@color/white" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/button_height"
-        android:layout_margin="16dp"
-        android:textSize="@dimen/regular_font_size"
-        app:cardBackgroundColor="@color/orange_gradient_start"
-        app:cardCornerRadius="@dimen/default_radius">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/default_margin"
-            android:text="Tem bazuca nesse filme?"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/regular_font_size" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/big_font_size"
-        tools:text="Sim"
-        tools:textColor="@color/positive_green" />
-
-
-</LinearLayout>
+        android:layout_height="match_parent" />
+</FrameLayout>
