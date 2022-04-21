@@ -49,6 +49,10 @@ dependencies {
     implementation "com.google.firebase:firebase-analytics-ktx"
     implementation 'com.google.firebase:firebase-database-ktx'
 
+    // Test
+    testImplementation "junit:junit:${versions.junit}"
+    testImplementation "androidx.arch.core:core-testing:${versions.androidXArch}"
+    androidTestImplementation "androidx.test.ext:junit:${versions.extJunit}"
     androidTestImplementation("androidx.test.espresso:espresso-core:${versions.androidXTestEspresso}", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
