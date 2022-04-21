@@ -7,6 +7,10 @@ internal fun getAppLanguage(): Language {
     val appLanguage = Locale.getDefault().language
 
     return Language.values().first {
-        it.toString().lowercase() == appLanguage
+        it.toStringCode() == appLanguage
     }
+}
+
+internal fun Language.toStringCode(): String {
+    return this.name.lowercase()
 }

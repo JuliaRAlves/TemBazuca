@@ -10,7 +10,7 @@ import com.junyidark.tembazuca.domain.interfaces.IRepository
 class CheckIfMovieHasBazookaOrNot(
     private val repository: IRepository
 ) {
-    fun execute(movieTitle: String): Boolean? {
+    suspend fun execute(movieTitle: String): Boolean? {
         val answer: Boolean? = try {
             val movie: Movie = getMovie(movieTitle)
 
@@ -24,7 +24,7 @@ class CheckIfMovieHasBazookaOrNot(
         return answer
     }
 
-    private fun getMovie(title: String): Movie {
+    private suspend fun getMovie(title: String): Movie {
         val language = getAppLanguage()
         val movieTitleList: List<MovieTitle> = repository.getMovieTitlesListIn(language)
 

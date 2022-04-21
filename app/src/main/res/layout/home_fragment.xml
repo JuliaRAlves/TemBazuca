@@ -26,6 +26,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:id="@+id/input"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
             android:hint="Digite o nome de um filme"
