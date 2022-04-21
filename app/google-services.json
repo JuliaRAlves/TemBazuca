@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "263604245545",
+    "project_id": "tembazuca",
+    "storage_bucket": "tembazuca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263604245545:android:a966c04d65ed90f608b838",
+        "android_client_info": {
+          "package_name": "com.junyidark.tembazuca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263604245545-a47oq9r6qdfkdhhsgehee807h2d3tva1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL9HZONbRgWeUz_lvggipR8PbLs2MhwHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263604245545-a47oq9r6qdfkdhhsgehee807h2d3tva1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

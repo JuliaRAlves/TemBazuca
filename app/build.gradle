@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -42,9 +43,12 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${versions.androidXAppCompat}"
     implementation "com.google.android.material:material:${versions.androidMaterial}"
     implementation "androidx.constraintlayout:constraintlayout:${versions.androidXConstraintLayout}"
-    testImplementation "junit:junit:${versions.junit}"
-    androidTestImplementation "androidx.test.ext:junit:${versions.extJunit}"
-    androidTestImplementation "junit:junit:${versions.junit}"
+
+    //Firebase
+    implementation platform("com.google.firebase:firebase-bom:${versions.firebaseBoM}")
+    implementation "com.google.firebase:firebase-analytics-ktx"
+    implementation 'com.google.firebase:firebase-database-ktx'
+
     androidTestImplementation("androidx.test.espresso:espresso-core:${versions.androidXTestEspresso}", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
