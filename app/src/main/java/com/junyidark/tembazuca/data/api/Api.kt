@@ -9,12 +9,13 @@ import com.junyidark.tembazuca.data.model.MovieModel
 import com.junyidark.tembazuca.data.model.MovieTitleModel
 
 class Api : IApi {
-    override fun getMovieTitlesListIn(language: Language): List<MovieTitleModel> {
+    override suspend fun getMovieTitlesListIn(language: Language): List<MovieTitleModel> {
         val database = Firebase.database.reference
         val languageCode = language.toStringCode()
         val childPathName = languageCode + "Names"
 
         val data = database.child(childPathName).get()
+
 
         if (data.isSuccessful) { //currently not working because it has to be async
             val result = data.result

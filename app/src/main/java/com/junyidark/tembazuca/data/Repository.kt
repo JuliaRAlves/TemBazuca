@@ -7,7 +7,7 @@ import com.junyidark.tembazuca.domain.entities.MovieTitle
 import com.junyidark.tembazuca.domain.interfaces.IRepository
 
 class Repository(private val dataAccess: IApi) : IRepository {
-    override fun getMovieTitlesListIn(language: Language): List<MovieTitle> {
+    override suspend fun getMovieTitlesListIn(language: Language): List<MovieTitle> {
         return dataAccess.getMovieTitlesListIn(language).toDomainMovieTitleList()
     }
 

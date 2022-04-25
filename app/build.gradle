@@ -44,7 +44,13 @@ dependencies {
     implementation "com.google.android.material:material:${versions.androidMaterial}"
     implementation "androidx.constraintlayout:constraintlayout:${versions.androidXConstraintLayout}"
 
-    //Firebase
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-common-java8:${versions.androidXLifecycle}"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:${versions.androidXLifecycle}"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${versions.androidXLifecycle}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.androidXLifecycle}"
+
+    // Firebase
     implementation platform("com.google.firebase:firebase-bom:${versions.firebaseBoM}")
     implementation "com.google.firebase:firebase-analytics-ktx"
     implementation 'com.google.firebase:firebase-database-ktx'

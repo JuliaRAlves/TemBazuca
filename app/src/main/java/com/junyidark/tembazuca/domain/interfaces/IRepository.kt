@@ -5,6 +5,6 @@ import com.junyidark.tembazuca.domain.entities.Movie
 import com.junyidark.tembazuca.domain.entities.MovieTitle
 
 interface IRepository {
-    fun getMovieTitlesListIn(language: Language): List<MovieTitle>
+    suspend fun getMovieTitlesListIn(language: Language): List<MovieTitle>
     fun getMovieById(movieId: Int): Movie
 }

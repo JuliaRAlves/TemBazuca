@@ -5,6 +5,6 @@ import com.junyidark.tembazuca.data.model.MovieModel
 import com.junyidark.tembazuca.data.model.MovieTitleModel
 
 interface IApi {
-    fun getMovieTitlesListIn(language: Language): List<MovieTitleModel>
+    suspend fun getMovieTitlesListIn(language: Language): List<MovieTitleModel>
     fun getMovieById(movieId: Int): MovieModel
 }

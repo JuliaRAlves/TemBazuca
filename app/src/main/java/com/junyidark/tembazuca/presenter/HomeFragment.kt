@@ -5,9 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.junyidark.tembazuca.core.enums.Language
 import com.junyidark.tembazuca.data.api.Api
+import com.junyidark.tembazuca.data.model.MovieTitleModel
 import com.junyidark.tembazuca.databinding.HomeFragmentBinding
+import kotlinx.coroutines.launch
+import kotlin.coroutines.coroutineContext
 
 class HomeFragment : Fragment() {
 
@@ -28,13 +32,5 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
 
         _binding = null
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val movies = Api().getMovieTitlesListIn(Language.PT) //just for test
-
-        binding.input.setText(movies.first().toMovieTitle().title)
     }
 }

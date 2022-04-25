@@ -6,7 +6,7 @@ import com.junyidark.tembazuca.data.model.MovieModel
 import com.junyidark.tembazuca.data.model.MovieTitleModel
 
 class ApiMock : IApi {
-    override fun getMovieTitlesListIn(language: Language): List<MovieTitleModel> {
+    override suspend fun getMovieTitlesListIn(language: Language): List<MovieTitleModel> {
         return listOf(
             MovieTitleModel(
                 movieId = 1,
